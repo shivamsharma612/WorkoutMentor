@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.shusky.sharma.mentorworkout.MainActivityHelp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#F00"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="141dp"
+        android:layout_marginStart="141dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="
+\n
+Workout Mentor is an automated workout planning application which uses near field communication sensors input to automatically detect your workout regime.
+
+You can check the history of your workout saved on each day on the calender and plan ahead your future workout.
+
+Following contains functionality of the application: \n
+- Tag Entry: User can check the history of the exercises performed. This section will gather the exercises performed by the user which can be edited and saved for each day.
+- Manual Entry: User can manually enter the exercises performed with this button.
+- Calender: User can check the history of thier workout on corresponding date of the month
+- Exercises: User can check the types of exercises in the application database
+- Stop Watch/ Alarm: User can set the timer with this section \n"
+
+        android:id="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For more info contact: developer@xyz.com"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#F00"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+</RelativeLayout>

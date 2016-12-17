@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_calander__sql"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:onClick="setDate"-->
+        <!--android:text="@string/date_button_set" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:text="@string/date_label_set"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/button1"-->
+        <!--android:layout_marginTop="66dp"-->
+        <!--android:layout_toLeftOf="@+id/button1"-->
+        <!--android:text="@string/date_view_set"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignRight="@+id/button1"-->
+        <!--android:layout_below="@+id/textView2"-->
+        <!--android:layout_marginTop="72dp"-->
+        <!--android:text="@string/date_selected"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/rep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+
+
+
+        android:id="@+id/EmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/EmployeeDesignation"
+        android:layout_toEndOf="@+id/EmployeeDesignation" />
+
+    <TextView
+        android:id="@+id/reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+        <!--android:layout_toRightOf="@id/EmployeeDesignation"/>-->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Employee"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp">
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add exercise"
+        android:id="@+id/button"
+        android:onClick="createandAccessDB"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/EmployeeDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"/>
+        ?android:layout_toEndOf="@+id/EmployeeName" />
+</RelativeLayout>
